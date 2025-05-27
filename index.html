@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RisingKings Clan</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+      color: #fff;
+    }
+    .neon {
+      text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="rules.html">Rules</a></li>
-      <li><a href="ranks.html">Ranks</a></li>
-      <li><a href="ad.html">Clan Ad</a></li>
-    </ul>
+<body class="min-h-screen">
+  <nav class="glass p-4 flex justify-between items-center">
+    <h1 class="text-3xl neon">RisingKings</h1>
+    <div class="space-x-4">
+      <a href="#rules" class="hover:underline">Rules</a>
+      <a href="#ranks" class="hover:underline">Ranks</a>
+      <a href="#ad" class="hover:underline">Clan Ad</a>
+    </div>
   </nav>
-  <header>
-    <h1>Welcome to RisingKings</h1>
-    <p>Owner: <strong>Sculkrose</strong></p>
-    <p>Helpers: WickedShadow_1, ShuTakayashii, Max_YT8402</p>
-    <a href="#" class="btn">Join Now</a>
-  </header>
+
+  <section class="text-center py-20">
+    <h2 class="text-5xl neon mb-4">Welcome to RisingKings</h2>
+    <p class="text-lg">Owned by <span class="font-bold">Sculkrose</span></p>
+    <p class="text-sm">Helpers: WickedShadow_1, ShuTakayashii, Max_YT8402</p>
+    <a href="#ad" class="mt-8 inline-block px-6 py-3 bg-teal-500 hover:bg-teal-400 text-black rounded-full font-bold transition">Join the Clan</a>
+  </section>
+
+  <section id="rules" class="glass mx-auto max-w-3xl p-8 my-12 rounded-xl">
+    <h3 class="text-3xl mb-4 neon">Clan Rules</h3>
+    <ul class="list-disc ml-6">
+      <li><strong>Grief</strong>: 2 weeks ban</li>
+      <li><strong>Swear</strong>: 1 hour mute + kick</li>
+      <li><strong>Begging</strong>: 30 minutes mute</li>
+    </ul>
+  </section>
+
+  <section id="ranks" class="glass mx-auto max-w-3xl p-8 my-12 rounded-xl">
+    <h3 class="text-3xl mb-4 neon">Clan Ranks</h3>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+      <li class="bg-black p-4 rounded-xl">Beast</li>
+      <li class="bg-black p-4 rounded-xl">God</li>
+      <li class="bg-black p-4 rounded-xl">Demon</li>
+      <li class="bg-black p-4 rounded-xl">Hades</li>
+      <li class="bg-black p-4 rounded-xl">Admin</li>
+    </ul>
+  </section>
+
+  <section id="ad" class="glass mx-auto max-w-3xl p-8 my-12 rounded-xl">
+    <h3 class="text-3xl mb-4 neon">Clan Advertisement</h3>
+    <p class="text-green-300 text-lg">&a&l wanna Join the Clan RisingKings? Its Amazing perks are Creative c base Kits and Many More! Do \c Join RisingKings</p>
+  </section>
+
+  <footer class="text-center p-6 text-sm glass mt-16">
+    <p>&copy; 2025 RisingKings. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
