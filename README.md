@@ -18,3 +18,6 @@ N/A
 
 Clan Ads:
 &a&l wanna Join the Clan risingKings{? Its Amazing perks are Creative c base Kits and Many More! do \c Join risingKings
+
+
+https://maxyt5184.github.io/RisingKings/
