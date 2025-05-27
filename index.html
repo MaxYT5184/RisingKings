@@ -20,10 +20,30 @@
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+    .slide-up {
+      transform: translateY(20px);
+      opacity: 0;
+      animation: slideUp 1s ease forwards;
+    }
+    .delay-1 { animation-delay: 0.5s; }
+    .delay-2 { animation-delay: 1s; }
+    .delay-3 { animation-delay: 1.5s; }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      to { transform: translateY(0); opacity: 1; }
+    }
   </style>
 </head>
 <body class="min-h-screen">
-  <nav class="glass p-4 flex justify-between items-center">
+  <nav class="glass p-4 flex justify-between items-center fade-in">
     <h1 class="text-3xl neon">RisingKings</h1>
     <div class="space-x-4">
       <a href="#rules" class="hover:underline">Rules</a>
@@ -32,14 +52,14 @@
     </div>
   </nav>
 
-  <section class="text-center py-20">
+  <section class="text-center py-20 slide-up delay-1">
     <h2 class="text-5xl neon mb-4">Welcome to RisingKings</h2>
     <p class="text-lg">Owned by <span class="font-bold">Sculkrose</span></p>
     <p class="text-sm">Helpers: WickedShadow_1, ShuTakayashii, Max_YT8402</p>
     <a href="#ad" class="mt-8 inline-block px-6 py-3 bg-teal-500 hover:bg-teal-400 text-black rounded-full font-bold transition">Join the Clan</a>
   </section>
 
-  <section id="rules" class="glass mx-auto max-w-3xl p-8 my-12 rounded-xl">
+  <section id="rules" class="glass mx-auto max-w-3xl p-8 my-12 rounded-xl slide-up delay-2">
     <h3 class="text-3xl mb-4 neon">Clan Rules</h3>
     <ul class="list-disc ml-6">
       <li><strong>Grief</strong>: 2 weeks ban</li>
@@ -48,23 +68,23 @@
     </ul>
   </section>
 
-  <section id="ranks" class="glass mx-auto max-w-3xl p-8 my-12 rounded-xl">
+  <section id="ranks" class="glass mx-auto max-w-3xl p-8 my-12 rounded-xl slide-up delay-3">
     <h3 class="text-3xl mb-4 neon">Clan Ranks</h3>
     <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
-      <li class="bg-black p-4 rounded-xl">Beast</li>
-      <li class="bg-black p-4 rounded-xl">God</li>
-      <li class="bg-black p-4 rounded-xl">Demon</li>
-      <li class="bg-black p-4 rounded-xl">Hades</li>
-      <li class="bg-black p-4 rounded-xl">Admin</li>
+      <li class="bg-black p-4 rounded-xl transform hover:scale-105 transition">Beast</li>
+      <li class="bg-black p-4 rounded-xl transform hover:scale-105 transition">God</li>
+      <li class="bg-black p-4 rounded-xl transform hover:scale-105 transition">Demon</li>
+      <li class="bg-black p-4 rounded-xl transform hover:scale-105 transition">Hades</li>
+      <li class="bg-black p-4 rounded-xl transform hover:scale-105 transition">Admin</li>
     </ul>
   </section>
 
-  <section id="ad" class="glass mx-auto max-w-3xl p-8 my-12 rounded-xl">
+  <section id="ad" class="glass mx-auto max-w-3xl p-8 my-12 rounded-xl fade-in delay-2">
     <h3 class="text-3xl mb-4 neon">Clan Advertisement</h3>
-    <p class="text-green-300 text-lg">&a&l wanna Join the Clan RisingKings? Its Amazing perks are Creative c base Kits and Many More! Do \c Join RisingKings</p>
+    <p class="text-green-300 text-lg animate-pulse">&a&l wanna Join the Clan RisingKings? Its Amazing perks are Creative c base Kits and Many More! Do \c Join RisingKings</p>
   </section>
 
-  <footer class="text-center p-6 text-sm glass mt-16">
+  <footer class="text-center p-6 text-sm glass mt-16 fade-in delay-3">
     <p>&copy; 2025 RisingKings. All Rights Reserved.</p>
   </footer>
 </body>
